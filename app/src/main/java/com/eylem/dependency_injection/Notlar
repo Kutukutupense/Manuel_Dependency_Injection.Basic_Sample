@@ -1,0 +1,52 @@
+Dependency Injection aslında bir yöntem ismidir. SOLİD prensiplerinin "D" si dependency Inversion'dır.
+
+Temel prensip:üst seviyedeki modüller ya da classlar alt seviyedeki modül ya da  classlara
+direkt olarak bağımlı olmasın. Bir soyut arayüz üzerinden birbirleri ile etkileşime geçsinler.
+
+A) Coupling: Bağlılık.
+1a) Tight Coupling: (Sıkı Bağlılık)
+Bir sınıf veya modül, diğer sınıflar veya modüllerle çok sıkı bir ilişki içerisindedir.
+Değişiklik yapmak zorlaşır çünkü bir bileşeni değiştirdiğinizde diğer bağlı bileşenlerin de etkilenmesi gerekir.
+Sıkı bağlılık, esnekliği azaltır ve kodu bakımını zorlaştırır.
+
+2a) Loose Coupling: (Gevşek Bağlılık)
+Bir sınıfın başka bir sınıfa bağımlılığı minimum düzeydedir.
+Bu durum, sınıfların birbirine daha az bağlı olmasını sağlayarak, bir bileşeni değiştirdiğinizde diğer bileşenleri etkilememenizi sağlar.
+Gevşek bağlılık, kodun bakımını, test edilebilirliğini ve genişletilebilirliğini artırır.
+
+Coupling'in Önemi
+Yüksek bağımlılık kodu karmaşık, bakımı zor ve genişletilemez hale getirir.
+Düşük bağımlılık ise kodun esnekliğini artırır, kolayca genişletilebilir ve test edilebilir olmasını sağlar.
+SOLID prensipleri ve Dependency Injection gibi kavramlar, kodu gevşek bağlı yapmaya yönelik yaklaşımlar sunar.
+
+
+B) Cohesion: Tutarlılık
+1b)Yüksek Cohesion (Yüksek Tutarlılık): Bir sınıf veya modül, yalnızca tek bir sorumluluk üstlenir ve o sorumluluğa odaklanır.
+Birbirleriyle yakından ilişkili işlevlere sahip olur.
+Avantajları: Daha anlaşılır, bakımı kolay ve genişletilebilir bir kod yapısı sağlar.
+
+2b)Düşük Cohesion (Düşük Tutarlılık): Bir sınıf veya modül, birden fazla sorumluluğa sahip olabilir veya
+birbirleriyle ilgisi olmayan işleri yapabilir. Bir sınıf hem veri işleme hem de kullanıcı arayüzü yönetimi
+gibi alakasız sorumlulukları barındırıyorsa düşük tutarlılık vardır.
+Dezavantajları: Karmaşıklığı artırır, değişiklik yapmak zorlaşır, test etmek daha zor hale gelir.
+
+Düşük Coupling Yüksek Cohesion getirir ve istebilen de budur.
+Yüksek Coupling ise Düşük Cohesion getirir ve uzak durulması gereken yapı da budur.
+
+Cohesion'in Önemi
+
+Anlaşılabilirlik: Yüksek tutarlılık, kodun okunmasını ve anlaşılmasını kolaylaştırır.
+Bakım Kolaylığı: Yüksek tutarlılığa sahip sınıflar, değişiklik yapılması gerektiğinde yalnızca kendi sorumluluklarıyla ilgili değişiklikler içerir.
+Test Edilebilirlik: Tek bir sorumluluğa odaklanan sınıflar ve fonksiyonlar daha kolay test edilebilir.
+
+Sonuç olarak, yüksek cohesion, yazılımın daha temiz, sürdürülebilir ve modüler olmasını sağlar.
+
+Manuel Dependency Injection:
+1. ilgili bağımlılığı Constructor'dan alabiliriz. Bunu yapamadığımız durumlarda ise ->
+2. ilgili bağımlılığı Field'dan alabiliriz.
+
+
+
+
+
+
