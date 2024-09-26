@@ -31,7 +31,7 @@ class Plane(private val newEngine:NewEngine){ // Manuel Dependency Injection kul
     }
 }
 
-class Roket(){  //Manuel Dependency Injection kullandık.(ilgili bağımlılığı fielddan alıyoruz)
+class Roket(){  //Manuel Dependency Injection kullandık.(ilgili bağımlılığı fielddan(setter injection) alıyoruz)
     private lateinit var newEngine:NewEngine
     fun setEngine(newEngine:NewEngine){
         this.newEngine = newEngine
